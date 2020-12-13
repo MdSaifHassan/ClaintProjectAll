@@ -1,0 +1,226 @@
+import {StyleSheet} from 'react-native';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
+import colors from '../../../../configs/color';
+
+//for profileScreen
+export const ProfileScreenStyle = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: 'column',
+  },
+  headerView: {
+    flexDirection: 'row',
+    marginTop: hp('5%'),
+  },
+  headerText: {
+    fontSize: hp('3%'),
+    color: colors.FONT_COLOR,
+    fontWeight: 'bold',
+  },
+  contentView: {
+    flexDirection: 'row',
+    marginTop: hp('4%'),
+    alignSelf: 'center',
+  },
+  contentText: {
+    fontSize: wp('5%'),
+    color: colors.BLACK,
+  },
+  addressHeader: {
+    marginLeft: wp('5%'),
+    fontSize: hp('2%'),
+    color: colors.BLACK,
+    fontFamily: 'NunitoSans-Black',
+  },
+  headerInnerWrapper: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignSelf: 'center',
+    marginRight: wp('11%'),
+  },
+  contentViewInnerWrapper: {
+    flex: 1,
+    flexDirection: 'row',
+    aspectRatio: 1.5,
+    height: hp('35%'),
+    elevation: 0,
+    alignSelf: 'center',
+    justifyContent: 'center',
+    borderRadius: wp('2%'),
+  },
+  contentViewInnerWrapper1: {
+    aspectRatio: 1.5,
+    position: 'relative',
+    flex: 1,
+    flexDirection: 'row',
+    alignSelf: 'center',
+    justifyContent: 'center',
+    borderRadius: 15,
+  },
+  contentViewInnerWrapper2: {
+    flex: 1,
+    flexDirection: 'column',
+    left: wp('73%'),
+    position: 'absolute',
+    backgroundColor: colors.FONT_COLOR,
+    width: 60,
+    height: 60,
+    justifyContent: 'center',
+    borderRadius: wp('10%'),
+    alignItems: 'flex-end',
+    top: '85%',
+    marginBottom: 10,
+  },
+  customText: {
+    justifyContent: 'center',
+    marginLeft: wp('5%'),
+    fontSize: hp('1.9%'),
+    fontFamily: 'NunitoSans-Bold',
+  },
+  customText1: {
+    justifyContent: 'center',
+    marginLeft: wp('5%'),
+    marginTop: hp('1%'),
+    fontFamily: 'NunitoSans-Regular',
+    fontSize: hp('1.4%'),
+  },
+  customText2: {
+    justifyContent: 'center',
+    marginLeft: wp('5%'),
+    marginTop: wp('2%'),
+    fontSize: hp('1.9%'),
+    fontFamily: 'NunitoSans-Bold',
+  },
+  signout: {
+    color: colors.WHITE,
+    fontSize: 17,
+    fontFamily: 'NunitoSans-Regular',
+  },
+  imageStyle: {
+    aspectRatio: 1,
+    width: wp('65%'),
+    height: hp('65%'),
+    alignSelf: 'center',
+    borderRadius: wp('0.5%'),
+  },
+  editProfileImageStyle: {
+    tintColor: colors.WHITE,
+    width: wp('6%'),
+    height: hp('6%'),
+    borderRadius: 2,
+    alignSelf: 'center',
+  },
+  rowStyle: {
+    flexDirection: 'row',
+    marginTop: hp('1.5%'),
+    marginRight: wp('4%'),
+  },
+});
+
+// For UpdateProfileScreen
+export const UpdateProfileScreenStyle = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: 'column',
+    //justifyContent: 'flex-end',
+  },
+  headerView: {
+    flexDirection: 'row',
+    marginTop: hp('5%'),
+  },
+  headerText: {
+    fontSize: hp('3%'),
+    color: colors.FONT_COLOR,
+    fontWeight: 'bold',
+  },
+  contentView: {
+    flexDirection: 'row',
+    marginTop: hp('4%'),
+    alignSelf: 'center',
+  },
+  contentText: {
+    fontSize: hp('1.9%'),
+    color: colors.BLACK,
+  },
+  addressHeader: {
+    marginLeft: hp('1.9%'),
+    fontSize: hp('3%'),
+    color: colors.BLACK,
+    fontFamily: 'NunitoSans-Black',
+  },
+  submitButtonText: {
+    color: colors.WHITE,
+    fontSize: hp('2.4%'),
+    fontFamily: 'NunitoSans-Regular',
+  },
+  contentViewInner: {
+    flex: 1,
+    flexDirection: 'row',
+    aspectRatio: 1.5,
+    height: hp('35%'),
+    elevation: 0,
+    alignSelf: 'center',
+    justifyContent: 'center',
+    borderRadius: wp('2%'),
+  },
+  contentViewInner1: {
+    aspectRatio: 1.5,
+    position: 'relative',
+    flex: 1,
+    flexDirection: 'row',
+    alignSelf: 'center',
+    justifyContent: 'center',
+    borderRadius: 15,
+  },
+  contentViewInnerImageBox: {
+    flex: 1,
+    flexDirection: 'column',
+    left: wp('73%'),
+    position: 'absolute',
+    backgroundColor: colors.FONT_COLOR,
+    width: 60,
+    height: 60,
+    justifyContent: 'center',
+    borderRadius: wp('10%'),
+    alignItems: 'flex-end',
+    top: '85%',
+    marginBottom: 10,
+  },
+  backArrow: {
+    width: wp('4.5%'),
+    height: hp('5%'),
+    marginLeft: wp('5%'),
+  },
+  screenHeader: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignSelf: 'center',
+    marginRight: wp('11%'),
+  },
+  userImage: {
+    aspectRatio: 1,
+    width: wp('65%'),
+    height: hp('65%'),
+    alignSelf: 'center',
+    borderRadius: wp('0.5%'),
+  },
+  editIcon: {
+    position: 'absolute',
+    tintColor: 'white',
+    width: wp('6%'),
+    height: hp('6%'),
+    borderRadius: 2,
+    alignSelf: 'center',
+  },
+  profileDetails: {
+    flexDirection: 'column',
+    flex: 1,
+    justifyContent: 'flex-end',
+    marginTop: hp('2%'),
+  },
+});
